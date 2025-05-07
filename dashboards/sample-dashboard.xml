@@ -1,1 +1,14 @@
 
+<dashboard>
+  <label>Web Traffic Overview</label>
+  <row>
+    <panel>
+      <chart>
+        <title>Requests per Hour</title>
+        <search>
+          <query>index=practice_index | timechart count by status</query>
+        </search>
+      </chart>
+    </panel>
+  </row>
+</dashboard>
